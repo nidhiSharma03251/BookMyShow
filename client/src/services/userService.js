@@ -6,14 +6,14 @@ export const userServices = baseAppApi.injectEndpoints({
             query: (payLoad) => ({
                 url: '/users/login',
                 method: "POST",
-                body: payload
+                body: payLoad
             })
         }),
         registerUser: build.mutation({
             query: (payLoad) => ({
                 url: '/users/register',
                 method: "POST",
-                body: payload
+                body: payLoad
             })
         }),
         getAllUsers: build.query({
